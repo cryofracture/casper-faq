@@ -33,3 +33,8 @@ curl -s http://localhost:8888/status | jq .last_added_block_info
 }
 ```
 
+## If I am not running a node locally, what --node-address do I use for making requests? 
+You can see the IP address of other nodes on the network by visiting the block explorder, cspr.live, specifically the peers section, [here](https://cspr.live/tools/peers). Node operators can restrict access to 7777, 8888, and 9999 to not respond to external requests. You should try multiple addresses from this page.
+
+## Do I have to run a node 24/7?
+To operate a node as a validator, your node has to be online 24/7, otherwise, you will be ejected for liveness failure and lose rewards. If you can't run a node 24/7, you can delegate your tokens to a validator with a healthy node and a good uptime.
